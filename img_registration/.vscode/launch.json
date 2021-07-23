@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python:run",
+            "type": "python",
+            "request": "launch",
+            //"program": "${cwd}/train.py",
+            //"program": "${cwd}/convert_to_onnx.py",
+            "program": "${cwd}/check_dataset.py",
+//             "args": ["--src_font", "charset/dawei/fangzhengxingkaiti.TTF","--dst_font", "charset/dawei/target.ttf","--charset", "CN","--sample_count", "1000","--sample_dir", "experiment/data"],
+            //yolo5s:192 yolo5x: 60
+//             "args": ["--dataset", "coco","--coco_path","./coco_flir","--depth","50"],
+//             "console": "integratedTerminal"
+        },
+//         {
+//             "name": "Python:val",
+//             "type": "python",
+//             "request": "launch",
+//             //"program": "${cwd}/train.py",
+//             //"program": "${cwd}/convert_to_onnx.py",
+//             "program": "${cwd}/visualize.py",
+// //             "args": ["--dataset", "coco","--coco_path","./coco_flir","--depth","50"],
+// //             "console": "integratedTerminal"
+//         },
+//         {
+//             "name": "Python:data",
+//             "type": "python",
+//             "request": "launch",
+//             //"program": "${cwd}/train.py",
+//                 //"program": "${cwd}/convert_to_onnx.py",
+//                 "program": "${cwd}/data_static.py",
+// //             "args": ["--dataset", "coco","--coco_path","./coco_flir","--depth","50"],
+// //             "console": "integratedTerminal"
+//         },
+//         {
+//             "name": "Python:editjson",
+//             "type": "python",
+//             "request": "launch",
+//             //"program": "${cwd}/train.py",
+//                 //"program": "${cwd}/convert_to_onnx.py",
+//                 "program": "${cwd}/coco2yolo.py",
+// //             "args": ["--dataset", "coco","--coco_path","./coco_flir","--depth","50"],
+// //             "console": "integratedTerminal"
+//         },
+    ]
+}

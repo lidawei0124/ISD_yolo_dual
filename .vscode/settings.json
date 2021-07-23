@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/opt/data/private/envs/anaconda3/envs/yolov5/bin/python",
+    "git.ignoreLimitWarning": true
+}

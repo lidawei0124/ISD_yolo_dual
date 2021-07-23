@@ -1,0 +1,8 @@
+train_data/
+weights/
+data6/
+*.jpg
+temp/
+log/
+*.zip
+*.pth

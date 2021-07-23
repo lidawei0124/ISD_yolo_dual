@@ -1,0 +1,53 @@
+from posixpath import join
+import numpy as np
+import os
+import random
+from shutil import copyfile
+
+if __name__=='__main__':
+    folder_name='val5'
+    chose_num=200
+    output_folder_name='val5'
+    #isddataset/labels/val1
+    # label_path_in = 'isddataset/labels/'+folder_name
+    label_path_in = '/root/private/code/yolov5-isd/img_registration/infrared/annotation/txt/data18'
+    imgs_path_in = '/root/private/code/yolov5-isd/img_registration/isddataset/images/val5'
+    err_path_in = '/root/private/code/yolov5-isd/img_registration/isddataset/errimgs/val5'
+
+    label_path_val='/root/private/code/yolov5-isd/img_registration/isdmini/labels/'+output_folder_name
+    imgs_path_val='/root/private/code/yolov5-isd/img_registration/isdmini/images/'+output_folder_name
+    err_path_val='/root/private/code/yolov5-isd/img_registration/isdmini/errimgs/'+output_folder_name
+    
+    #random.shuffle()
+    
+    label_in_list=os.listdir(label_path_in)
+    label_len=len(label_in_list)
+    val_len=chose_num
+
+    print(label_len,val_len)
+    random.shuffle(label_in_list)
+
+    val_list=label_in_list[0:val_len]
+    print(len(val_list))
+    
+    for file_name in val_list:
+        name=file_name.split('.')[0]
+        from_path_label=label_path_in+'/'+name+'.txt'
+        to_path_label=label_path_val+'/'+name+'.txt'
+        
+        from_path_imgs=imgs_path_in+'/'+name+'.bmp'
+        to_path_imgs=imgs_path_val+'/'+name+'.bmp'
+        
+        from_path_err=err_path_in+'/'+name+'_err2last.bmp'
+        to_path_err=err_path_val+'/'+name+'_err2last.bmp'
+        
+        copyfile(from_path_label,to_path_label)
+        copyfile(from_path_imgs,to_path_imgs)
+        copyfile(from_path_err,to_path_err)
+    print('done')
+
+    
+
+
+
+    

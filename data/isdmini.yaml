@@ -1,0 +1,28 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco128
+#     /yolov5
+
+
+# download command/URL (optional)
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /root/private/code/yolov5-isd/img_registration/isdmini/images/train2017/  # 128 images
+val: /root/private/code/yolov5-isd/img_registration/isdmini/images/val0/  # 128 images
+
+# number of classes
+nc: 1
+
+# class names
+###biao
+# names: ["乐研", "在线监测器", "子母表-M", "子母表-S", "恒仁仪表", "放电计数器", "有色圆筒", "气体压力继电器", "油位表", "温度表",
+#  "电压表-12kV", "电压表-15kV", "电压表-450V", "电流表-200A", "电流表-600A", "电流表-1200A", "电流表-2000A", "电流表-6000A"]
+###switch
+#"yaban", "zhishideng", "xuanniu", "daidianxianshiyi", "shuziwendu", "dianyajianceyi", "danyuanjianongzhuangzhi", "xianlubaohuceongzhuangzhi"
+###content
+#"biaoqian"
+
+names: ["uav"]
+

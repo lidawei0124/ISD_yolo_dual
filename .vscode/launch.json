@@ -1,0 +1,31 @@
+{
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python:train",
+            "type": "python",
+            "request": "launch",
+            "program": "${cwd}/train.py",
+//             "args": ["--batch-size", "720","--epochs", "200","--data", "./data/isd.yaml","--cfg", "./models/yolov5s.yaml","--weights", "None","--device","0,1,2,3,4,5"],
+//             "console": "integratedTerminal"
+        },
+        {
+            "name": "Python:test",
+            "type": "python",
+            "request": "launch",
+            "program": "${cwd}/test.py",
+//             "args": ["--dataset", "coco","--coco_path","./coco_flir","--depth","50"],
+//             "console": "integratedTerminal"
+        },
+        {
+            "name": "Python:demo",
+            "type": "python",
+            "request": "launch",
+                "program": "${cwd}/demo.py",
+//             "args": ["--dataset", "coco","--coco_path","./coco_flir","--depth","50"],
+//             "console": "integratedTerminal"
+        },
+//
+    ]
+}
