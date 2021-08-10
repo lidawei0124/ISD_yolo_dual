@@ -3,8 +3,17 @@
 yolo-dual on ISD dataset for paper 
 
 "Boost infrared moving aircraft object detection by fast homography estimation and dual Input object detection network" (under Submission)
+#author#
 
-	origin dataset: http://csdata.org/en/p/387/
+	Dawei Li
+	
+	Ph.D student of Beijing institute of Technolegy
+	
+	lidawei0124@gmail.com
+
+#datasets#
+
+	origin ISD dataset(22 sequences): http://csdata.org/en/p/387/
 
 	dataset ISD in paper: https://drive.google.com/file/d/1DZAsvZHVIb4Ro-571weHHd8cmq4iuEAp/view?usp=sharing
 
@@ -24,7 +33,8 @@ yolo-dual on ISD dataset for paper
 
 	python train_fast_homography.py
 
-*or you can just use the pretrained weight file in path 
+*or you can just use the pretrained weight file in path
+
 	"img_registration/fast_homography_acc0.07fps168.pth"
 
 
@@ -60,7 +70,7 @@ yolo-dual on ISD dataset for paper
 
 	python demo.py
 
-########benchmark###########
+########Benchmark###########
 
 ON ISD:
 
