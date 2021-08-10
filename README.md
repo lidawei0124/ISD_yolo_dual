@@ -18,9 +18,11 @@ yolo-dual on ISD dataset for paper
 #datasets#
 
 	origin ISD dataset(22 sequences): http://csdata.org/en/p/387/
+	
 	dataset ISD in paper: 
 	google https://drive.google.com/file/d/1DZAsvZHVIb4Ro-571weHHd8cmq4iuEAp/view?usp=sharing
-	baidupan link：https://pan.baidu.com/s/1Yd7ZCWk5CU5fV3Ij55Xy-g code：1daf 
+	baidupan link：https://pan.baidu.com/s/1Yd7ZCWk5CU5fV3Ij55Xy-g code：1daf
+	
 	dataset ISDMINI  in paper: 
 	google https://drive.google.com/file/d/1QTtywg44lkoe7hs3li8foZPZHmtKolTK/view?usp=sharing
 	baidupan link：https://pan.baidu.com/s/1copt0SliP_KwqMQT3ssawA code：77fy 
