@@ -4,60 +4,61 @@ yolo-dual on ISD dataset for paper
 
 "Boost infrared moving aircraft object detection by fast homography estimation and dual Input object detection network" (under Submission)
 
-origin dataset: http://csdata.org/en/p/387/
+	origin dataset: http://csdata.org/en/p/387/
 
-dataset ISD in paper: https://drive.google.com/file/d/1DZAsvZHVIb4Ro-571weHHd8cmq4iuEAp/view?usp=sharing
+	dataset ISD in paper: https://drive.google.com/file/d/1DZAsvZHVIb4Ro-571weHHd8cmq4iuEAp/view?usp=sharing
 
-dataset ISDMINI  in paper: https://drive.google.com/file/d/1QTtywg44lkoe7hs3li8foZPZHmtKolTK/view?usp=sharing
+	dataset ISDMINI  in paper: https://drive.google.com/file/d/1QTtywg44lkoe7hs3li8foZPZHmtKolTK/view?usp=sharing
 
 
 #first step#
 
-download dataset from above url, then unzip and put folders into "img_registration"
+	download dataset from above url, then unzip and put folders into "img_registration"
 
 
 #(option)train "the fast homography estimation network"#
 
 *download coco dataset if you want train "the fast homography estimation network" from scratch:
 
-cd img_registration
+	cd img_registration
 
-python train_fast_homography.py
+	python train_fast_homography.py
 
-*or you can just use the pretrained weight file in path "img_registration/fast_homography_acc0.07fps168.pth"
+*or you can just use the pretrained weight file in path 
+	"img_registration/fast_homography_acc0.07fps168.pth"
 
 
 #(option)train "dual input object detection network"#
 
 *if you want train "dual input object detection network" from scratch:
 
-python train.py
+	python train.py
 
 *or you can just use the pretrained weight files in path :
 
-"save/isd_yolo_dual" for yolo-dual on ISD
+	"save/isd_yolo_dual" for yolo-dual on ISD
 
-"save/isd_yolo_single" for yolo-single on ISD
+	"save/isd_yolo_single" for yolo-single on ISD
 
-"save/isd_yolo_stack" for yolo-stack on ISD
+	"save/isd_yolo_stack" for yolo-stack on ISD
 
-"save/isdmini_yolo_dual" for yolo-dual on ISDMINI
+	"save/isdmini_yolo_dual" for yolo-dual on ISDMINI
 
-"save/isdmini_yolo_single" for yolo-single on ISDMINI
+	"save/isdmini_yolo_single" for yolo-single on ISDMINI
 
-"save/isdmini_yolo_stack" for yolo-stack on ISDMINI
+	"save/isdmini_yolo_stack" for yolo-stack on ISDMINI
 
 
 #test "the fast homography estimation network"#
 
-cd img_registration
+	cd img_registration
 
-python test_homography_compare.py
+	python test_homography_compare.py
 
 
 #test the infrared moving aircraft detection algorithm in paper#
 
-python demo.py
+	python demo.py
 
 ########benchmark###########
 
@@ -88,7 +89,7 @@ ON ISDMINI:
 
 					ISTDet		0.938	0.794	0.883	0.896	0.928	76
 
-		Tested in this paper	Yolo5-Single	0.995	0.876	0.862	0.995	0.73	108
+	Tested in this paper		Yolo5-Single	0.995	0.876	0.862	0.995	0.73	108
 
 					Yolo5-Stack	0.994	0.741	0.993	0.995	0.996	57
 
