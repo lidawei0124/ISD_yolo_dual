@@ -12,6 +12,11 @@ yolo-dual on ISD dataset for paper
 	
 	lidawei0124@gmail.com
 
+
+#declaration#
+	
+	the code of  "dual input object detection network" part is modifed based on yolov5s model(https://github.com/ultralytics/yolov5)
+	
 #datasets#
 
 	origin ISD dataset(22 sequences): http://csdata.org/en/p/387/
