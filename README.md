@@ -28,12 +28,12 @@ yolo-dual on ISD dataset for paper
 
 #first step#
 
-	download dataset from above url, then unzip and put folders into "img_registration"
+	download dataset from above urls, then unzip and put folders into path "img_registration"
 
 
 #(option)train "the fast homography estimation network"#
 
-*download coco dataset if you want train "the fast homography estimation network" from scratch:
+*download coco dataset if you want to train "the fast homography estimation network" from scratch:
 
 	cd img_registration
 
@@ -46,7 +46,7 @@ yolo-dual on ISD dataset for paper
 
 #(option)train "dual input object detection network"#
 
-*if you want train "dual input object detection network" from scratch:
+*if you want to train "dual input object detection network" from scratch:
 
 	python train.py
 
