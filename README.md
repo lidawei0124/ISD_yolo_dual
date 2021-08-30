@@ -2,7 +2,7 @@
 
 yolo-dual on ISD dataset for paper 
 
-"Boost infrared moving aircraft detection by fast homography estimation and dual input object detection network" (under Submission)
+"Boost Infrared Moving Aircraft Detection Performance by Using Fast Homography Estimation and Dual Input Object Detection Network" (under Submission)
 
 #author&copyright#
 
